@@ -1,0 +1,59 @@
+.highlight-text {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.highlight-text:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  bottom: 8px;
+  width: calc(100%);
+  height: 20px;
+  background-color: #FD5D35; /* Vous pouvez changer la couleur */
+  z-index: -1;
+}
+
+.draw {
+  opacity: 1;
+  fill: none;
+  stroke-width: 2;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: drawAndErase 10s linear infinite;
+}
+
+@keyframes drawAndErase {
+  0% {
+    stroke-dashoffset: 1000;
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.7;
+    stroke-dashoffset: 0;
+  }
+  40% {
+    opacity: 0.7;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    opacity: 0;
+    stroke-dashoffset: -1000;
+  }
+  100% {
+    opacity: 0;
+    stroke-dashoffset: -1000;
+  }
+}
+
+/* Délais ajustés pour le nouveau cycle de 5 secondes */
+.draw:nth-child(1) { animation-delay: 0.1s; }
+.draw:nth-child(2) { animation-delay: 0.2s; }
+.draw:nth-child(3) { animation-delay: 0.3s; }
+.draw:nth-child(4) { animation-delay: 0.4s; }
+.draw:nth-child(5) { animation-delay: 0.5s; }
+.draw:nth-child(6) { animation-delay: 0.6s; }
+.draw:nth-child(7) { animation-delay: 0.7s; }
+.draw:nth-child(8) { animation-delay: 0.8s; }

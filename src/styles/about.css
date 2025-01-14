@@ -1,0 +1,87 @@
+.highlight-text-small {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.highlight-text-small:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  bottom: 4px;
+  width: calc(100%);
+  height: 16px;
+  background-color: #FD5D35; /* Vous pouvez changer la couleur */
+  z-index: -1;
+}
+
+@keyframes float1 {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(4px, -4px) rotate(2deg);
+  }
+  50% {
+    transform: translate(-2px, -6px) rotate(-1deg);
+  }
+  75% {
+    transform: translate(-4px, -2px) rotate(1deg);
+  }
+}
+
+@keyframes float2 {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(-3px, -5px) rotate(-2deg);
+  }
+  50% {
+    transform: translate(4px, -2px) rotate(1.5deg);
+  }
+  75% {
+    transform: translate(2px, -6px) rotate(-1deg);
+  }
+}
+
+@keyframes float3 {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(5px, -2px) rotate(1.5deg);
+  }
+  50% {
+    transform: translate(-4px, -4px) rotate(-2deg);
+  }
+  75% {
+    transform: translate(2px, -5px) rotate(1deg);
+  }
+}
+
+.badge {
+  animation: float1 6s ease-in-out infinite;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.badge:hover {
+  animation: none;
+  transform: translate(0, 0) rotate(0deg);
+}
+
+.badge:nth-child(3n+1) {
+  animation-name: float1;
+  animation-delay: -2s;
+}
+
+.badge:nth-child(3n+2) {
+  animation-name: float2;
+  animation-delay: -1s;
+}
+
+.badge:nth-child(3n+3) {
+  animation-name: float3;
+  animation-delay: -3s;
+}
