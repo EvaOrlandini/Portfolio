@@ -3,11 +3,11 @@ import { ReactComponent as Check } from "../assets/icons/check.svg";
 
 const About = () => {
   return (
-    <div className="h-screen mx-28 flex flex-col items-center">
+    <div id="about" className="mx-28 flex flex-col items-center mb-36">
       <h2 className="highlight-text-small text-black text-4xl font-bold mb-14">
         About
       </h2>
-      <p className="text-center w-9/12">
+      <p className="text-center text-sm w-9/12">
         Quisque vitae risus et elit aliquam laoreet. Maecenas ut eros id eros
         lacinia lacinia. Donec vel metus venenatis, accumsan lorem et, suscipit
         ipsum. Quisque accumsan lobortis enim, ut vehicula quam ornare sed. Cras
@@ -52,6 +52,54 @@ const About = () => {
           <p className="font-medium text-md">CSS</p>
         </div>
 
+        {/* React */}
+        <div className="badge group w-fit h-fit flex flex-row items-center justify-center bg-gray-200 hover:bg-[#E1F5FE] px-3 py-1 rounded-md gap-3 transition-colors duration-200">
+          <i className="devicon-react-original text-gray-600 group-hover:text-[#61DAFB] transition-colors duration-200"></i>
+          <p className="font-medium text-md">React</p>
+        </div>
+
+        {/* Ruby */}
+        <div className="badge group w-fit h-fit flex flex-row items-center justify-center bg-gray-200 hover:bg-[#FFEBEE] px-3 py-1 rounded-md gap-3 transition-colors duration-200">
+          <i className="devicon-ruby-plain text-gray-600 group-hover:text-[#CC342D] transition-colors duration-200"></i>
+          <p className="font-medium text-md">Ruby</p>
+        </div>
+
+        {/* Ruby on Rails */}
+        <div className="badge group w-fit h-fit flex flex-row items-center justify-center bg-gray-200 hover:bg-[#FFEBEE] px-3 py-1 rounded-md gap-3 transition-colors duration-200">
+          <i className="devicon-rails-plain text-gray-600 group-hover:text-[#CC0000] transition-colors duration-200"></i>
+          <p className="font-medium text-md">Ruby on Rails</p>
+        </div>
+
+        {/* Sass */}
+        <div className="badge group w-fit h-fit flex flex-row items-center justify-center bg-gray-200 hover:bg-[#FCE4EC] px-3 py-1 rounded-md gap-3 transition-colors duration-200">
+          <i className="devicon-sass-original text-gray-600 group-hover:text-[#CC6699] transition-colors duration-200"></i>
+          <p className="font-medium text-md">Sass</p>
+        </div>
+
+        {/* Tailwind */}
+        <div className="badge group w-fit h-fit flex flex-row items-center justify-center bg-gray-200 hover:bg-[#E0F7FA] px-3 py-1 rounded-md gap-3 transition-colors duration-200">
+          <i className="devicon-tailwindcss-plain text-gray-600 group-hover:text-[#06B6D4] transition-colors duration-200"></i>
+          <p className="font-medium text-md">Tailwind</p>
+        </div>
+
+        {/* Bootstrap */}
+        <div className="badge group w-fit h-fit flex flex-row items-center justify-center bg-gray-200 hover:bg-[#F3E5F5] px-3 py-1 rounded-md gap-3 transition-colors duration-200">
+          <i className="devicon-bootstrap-plain text-gray-600 group-hover:text-[#7952B3] transition-colors duration-200"></i>
+          <p className="font-medium text-md">Bootstrap</p>
+        </div>
+
+        {/* SQL */}
+        <div className="badge group w-fit h-fit flex flex-row items-center justify-center bg-gray-200 hover:bg-[#E1F5FE] px-3 py-1 rounded-md gap-3 transition-colors duration-200">
+          <i className="devicon-postgresql-plain text-gray-600 group-hover:text-[#4169E1] transition-colors duration-200"></i>
+          <p className="font-medium text-md">SQL</p>
+        </div>
+
+        {/* Github */}
+        <div className="badge group w-fit h-fit flex flex-row items-center justify-center bg-gray-200 hover:bg-[#F5F5F5] px-3 py-1 rounded-md gap-3 transition-colors duration-200">
+          <i className="devicon-github-original text-gray-600 group-hover:text-[#181717] transition-colors duration-200"></i>
+          <p className="font-medium text-md">Github</p>
+        </div>
+
         {/* Figma */}
         <div className="badge group w-fit h-fit flex flex-row items-center justify-center bg-gray-200 hover:bg-[#F3E5F5] px-3 py-1 rounded-md gap-3 transition-colors duration-200">
           <i className="devicon-figma-plain text-gray-600 group-hover:text-[#F24E1E] transition-colors duration-200"></i>
@@ -70,58 +118,10 @@ const About = () => {
           <p className="font-medium text-md">Illustrator</p>
         </div>
 
-        {/* Bootstrap */}
-        <div className="badge group w-fit h-fit flex flex-row items-center justify-center bg-gray-200 hover:bg-[#F3E5F5] px-3 py-1 rounded-md gap-3 transition-colors duration-200">
-          <i className="devicon-bootstrap-plain text-gray-600 group-hover:text-[#7952B3] transition-colors duration-200"></i>
-          <p className="font-medium text-md">Bootstrap</p>
-        </div>
-
-        {/* Ruby */}
-        <div className="badge group w-fit h-fit flex flex-row items-center justify-center bg-gray-200 hover:bg-[#FFEBEE] px-3 py-1 rounded-md gap-3 transition-colors duration-200">
-          <i className="devicon-ruby-plain text-gray-600 group-hover:text-[#CC342D] transition-colors duration-200"></i>
-          <p className="font-medium text-md">Ruby</p>
-        </div>
-
-        {/* Ruby on Rails */}
-        <div className="badge group w-fit h-fit flex flex-row items-center justify-center bg-gray-200 hover:bg-[#FFEBEE] px-3 py-1 rounded-md gap-3 transition-colors duration-200">
-          <i className="devicon-rails-plain text-gray-600 group-hover:text-[#CC0000] transition-colors duration-200"></i>
-          <p className="font-medium text-md">Ruby on Rails</p>
-        </div>
-
-        {/* React */}
-        <div className="badge group w-fit h-fit flex flex-row items-center justify-center bg-gray-200 hover:bg-[#E1F5FE] px-3 py-1 rounded-md gap-3 transition-colors duration-200">
-          <i className="devicon-react-original text-gray-600 group-hover:text-[#61DAFB] transition-colors duration-200"></i>
-          <p className="font-medium text-md">React</p>
-        </div>
-
-        {/* Sass */}
-        <div className="badge group w-fit h-fit flex flex-row items-center justify-center bg-gray-200 hover:bg-[#FCE4EC] px-3 py-1 rounded-md gap-3 transition-colors duration-200">
-          <i className="devicon-sass-original text-gray-600 group-hover:text-[#CC6699] transition-colors duration-200"></i>
-          <p className="font-medium text-md">Sass</p>
-        </div>
-
-        {/* Tailwind */}
-        <div className="badge group w-fit h-fit flex flex-row items-center justify-center bg-gray-200 hover:bg-[#E0F7FA] px-3 py-1 rounded-md gap-3 transition-colors duration-200">
-          <i className="devicon-tailwindcss-plain text-gray-600 group-hover:text-[#06B6D4] transition-colors duration-200"></i>
-          <p className="font-medium text-md">Tailwind</p>
-        </div>
-
-        {/* Github */}
-        <div className="badge group w-fit h-fit flex flex-row items-center justify-center bg-gray-200 hover:bg-[#F5F5F5] px-3 py-1 rounded-md gap-3 transition-colors duration-200">
-          <i className="devicon-github-original text-gray-600 group-hover:text-[#181717] transition-colors duration-200"></i>
-          <p className="font-medium text-md">Github</p>
-        </div>
-
         {/* VS Code */}
         <div className="badge group w-fit h-fit flex flex-row items-center justify-center bg-gray-200 hover:bg-[#E3F2FD] px-3 py-1 rounded-md gap-3 transition-colors duration-200">
           <i className="devicon-vscode-plain text-gray-600 group-hover:text-[#007ACC] transition-colors duration-200"></i>
           <p className="font-medium text-md">VS Code</p>
-        </div>
-
-        {/* SQL */}
-        <div className="badge group w-fit h-fit flex flex-row items-center justify-center bg-gray-200 hover:bg-[#E1F5FE] px-3 py-1 rounded-md gap-3 transition-colors duration-200">
-          <i className="devicon-postgresql-plain text-gray-600 group-hover:text-[#4169E1] transition-colors duration-200"></i>
-          <p className="font-medium text-md">SQL</p>
         </div>
       </div>
     </div>
