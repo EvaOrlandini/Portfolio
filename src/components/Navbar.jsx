@@ -16,12 +16,12 @@ const Navbar = () => {
 
   return (
     <div className="h-20 flex justify-between items-center mx-24">
-      <p className="name text-3xl font-bold">Eva Orlandini<span className='text-primary-100 text-6xl'>.</span></p>
+      <p className="name text-3xl font-bold dark:text-text-dark">Eva Orlandini<span className='text-primary text-6xl dark:text-primary-dark' >.</span></p>
       <div className='flex flex-row gap-9'>
       <div className="flex gap-4">
-        <a href="#about" className="text-xl mx-4 text-black font-normal">About</a>
-        <a href="#projects" className="text-xl mx-4 text-black font-normal">Projects</a>
-        <a href="#contact" className="text-xl mx-4 text-black font-normal">Contact</a>
+        <a href="#about" className="text-xl mx-4 text-text font-normal dark:text-text-dark">About</a>
+        <a href="#projects" className="text-xl mx-4 text-text font-normal dark:text-text-dark">Projects</a>
+        <a href="#contact" className="text-xl mx-4 text-text font-normal dark:text-text-dark">Contact</a>
       </div>
       <label className="flex cursor-pointer select-none items-center">
         <div className="relative">

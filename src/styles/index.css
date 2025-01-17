@@ -9,7 +9,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #1A1A1A;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -40,6 +40,11 @@ body {
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
+}
+
+:root.dark body {
+  background-image: url('../assets/images/grid-backgroun.png');
+  background-color: #1A1A1A;
 }
 
 h1 {
@@ -89,6 +94,9 @@ button:focus-visible {
   z-index: -1;
 }
 
+:root.dark .highlight-text-small:after{
+  background-color: #8944ce; /* Vous pouvez changer la couleur */
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

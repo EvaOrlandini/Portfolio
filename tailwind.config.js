@@ -9,8 +9,16 @@ export default {
     extend: {
       colors: {
         'primary': {
-          100: '#FD4D21',
-          200: '#ff6b47',
+          DEFAULT: '#FD4D21',
+          dark: '#8944ce',
+          100: {
+            DEFAULT: '#FD4D21',
+            dark: '#8944ce'
+          },
+          200: {
+            DEFAULT: '#FD4D21',
+            dark: '#8944ce'
+          }
         },
         'background': {
           DEFAULT: '#ffffff',

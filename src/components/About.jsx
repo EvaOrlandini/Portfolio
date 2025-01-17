@@ -4,10 +4,10 @@ import { ReactComponent as Check } from "../assets/icons/check.svg";
 const About = () => {
   return (
     <div id="about" className="mx-28 flex flex-col items-center mb-36">
-      <h2 className="highlight-text-small text-black text-4xl font-bold mb-14">
+      <h2 className="highlight-text-small text-text text-4xl font-bold mb-14 dark:text-text-dark">
         About
       </h2>
-      <p className="text-center text-sm w-9/12">
+      <p className="text-center text-sm w-9/12 dark:text-text-dark">
         Quisque vitae risus et elit aliquam laoreet. Maecenas ut eros id eros
         lacinia lacinia. Donec vel metus venenatis, accumsan lorem et, suscipit
         ipsum. Quisque accumsan lobortis enim, ut vehicula quam ornare sed. Cras
@@ -21,15 +21,15 @@ const About = () => {
       <div className="flex flex-row my-12 gap-x-16 justify-center content-start flex-wrap">
         <span className="flex flex-row items-center justify-center">
           <Check className="w-[36px] h-auto mr-2" />
-          <p className="text-black text-xl font-bold">Fast learning</p>
+          <p className="text-text text-xl font-bold dark:text-text-dark">Fast learning</p>
         </span>
         <span className="flex flex-row items-center justify-center">
           <Check className="w-[36px] h-auto mr-2" />
-          <p className="text-black text-xl font-bold">Creativity</p>
+          <p className="text-text text-xl font-bold dark:text-text-dark">Creativity</p>
         </span>
         <span className="flex flex-row items-center justify-center">
           <Check className="w-[36px] h-auto mr-2" />
-          <p className="text-black text-xl font-bold">Solving problems</p>
+          <p className="text-text text-xl font-bold dark:text-text-dark">Solving problems</p>
         </span>
       </div>
 
