@@ -1,5 +1,5 @@
 import "../styles/about.css";
-import { ReactComponent as Check } from "../assets/icons/check.svg";
+import checkIcon from "../assets/icons/check.svg";
 
 const About = () => {
   return (
@@ -20,15 +20,27 @@ const About = () => {
       </p>
       <div className="flex flex-row my-12 gap-x-16 justify-center content-start flex-wrap">
         <span className="flex flex-row items-center justify-center">
-          <Check className="w-[36px] h-auto mr-2" />
+          <img
+            src={checkIcon}
+            alt="check"
+            className="w-[36px] h-auto mr-2 check-icon"
+          />
           <p className="text-text text-xl font-bold dark:text-text-dark">Fast learning</p>
         </span>
         <span className="flex flex-row items-center justify-center">
-          <Check className="w-[36px] h-auto mr-2" />
+          <img
+            src={checkIcon}
+            alt="check"
+            className="w-[36px] h-auto mr-2 check-icon"
+          />
           <p className="text-text text-xl font-bold dark:text-text-dark">Creativity</p>
         </span>
         <span className="flex flex-row items-center justify-center">
-          <Check className="w-[36px] h-auto mr-2" />
+          <img
+            src={checkIcon}
+            alt="check"
+            className="w-[36px] h-auto mr-2 check-icon"
+          />
           <p className="text-text text-xl font-bold dark:text-text-dark">Solving problems</p>
         </span>
       </div>

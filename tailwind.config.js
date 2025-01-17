@@ -21,8 +21,8 @@ export default {
           }
         },
         'background': {
-          DEFAULT: '#ffffff',
-          dark: '#121212',
+          DEFAULT: '#333333',
+          dark: '#ffffff',
         },
         'text': {
           DEFAULT: '#333333',

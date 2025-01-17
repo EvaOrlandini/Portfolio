@@ -1,6 +1,5 @@
 import "../styles/hero.css";
 import lineArt from "../assets/images/lineart.png"; // Import direct du SVG
-import lineArtNeg from "../assets/images/lineart-neg.png"; // Import direct du SVG
 import { ReactComponent as Exclam } from "../assets/icons/exclam.svg";
 import { ReactComponent as Flame} from "../assets/icons/flame.svg";
 import { ReactComponent as Hand } from "../assets/icons/hand.svg";
@@ -12,9 +11,6 @@ import { ReactComponent as Sun } from "../assets/icons/sun.svg";
 
 const Hero = () => {
   const theme = localStorage.getItem('theme') || 'light';
-  const lineArtSrc = theme === 'dark'
-    ? lineArtNeg  // chemin vers votre image dark
-    : lineArt;  // garde l'image light existante
 
   return (
     <div className="hero mb-44">
@@ -29,7 +25,7 @@ const Hero = () => {
             to move towards my true passion: creating. I challenged myself to
             become a self-taught web designer and front-end developer.
           </p>
-          <button className="btn btn-primary border-1 border-primary-100">
+          <button className="btn btn-primary border-1 border-primary-100 dark:border-primary-dark bg-transparent dark:text-text-dark">
             Download my CV
           </button>
           <button className="btn btn-primary bg-gray-200 ml-6">
@@ -39,7 +35,7 @@ const Hero = () => {
 
         <div className="w-6/12 relative">
           <img
-            src={lineArtSrc}
+            src={lineArt}
             alt="hero"
             className="h-[450px] mx-auto dark:opacity-90"
           />

@@ -31,16 +31,16 @@ const Navbar = () => {
             onChange={toggleTheme}
             className="sr-only"
           />
-          <div className="block h-8 w-14 rounded-full bg-[#E5E7EB] dark:bg-gray-600"></div>
+          <div className="block h-8 w-14 rounded-full bg-primary-100 shadow-md dark:bg-primary-dark"></div>
           <div
-            className={`dot absolute left-1 top-1 flex h-6 w-6 items-center justify-center rounded-full bg-white transition transform duration-200 ease-in-out ${
+            className={`dot absolute left-1 top-1 flex h-6 w-6 items-center justify-center rounded-full bg-white shadow-md transition transform duration-200 ease-in-out ${
               theme === 'dark' ? 'translate-x-6' : ''
             }`}
           >
             {theme === 'dark' ? (
-              <Moon className="h-4 w-4 text-blue-400" />
+              <Moon className="h-4 w-4 text-primary-dark" />
             ) : (
-              <Sun className="h-4 w-4 text-yellow-400" />
+              <Sun className="h-4 w-4 text-primary-100" />
             )}
           </div>
         </div>
