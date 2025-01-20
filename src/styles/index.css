@@ -43,7 +43,7 @@ body {
 }
 
 :root.dark body {
-  background-image: url('../assets/images/grid-backgroun.png');
+  background-image: url('../assets/images/grid-background.png');
   background-color: #1A1A1A;
 }
 
@@ -68,6 +68,14 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
+@media (max-width: 768px) {
+  button {
+    padding: 0.4em 0.8em;
+    font-size: 0.8em;
+  }
+}
+
 button:hover {
   border-color: #646cff;
 }
@@ -92,6 +100,13 @@ button:focus-visible {
   height: 16px;
   background-color: #FD5D35; /* Vous pouvez changer la couleur */
   z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .highlight-text-small:after {
+    bottom: 4px;
+    height: 12px;
+  }
 }
 
 :root.dark .highlight-text-small:after{

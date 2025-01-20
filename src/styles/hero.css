@@ -16,6 +16,13 @@
   z-index: -1;
 }
 
+@media (max-width: 768px) {
+  .highlight-text:after {
+    height: 15px;
+    bottom: 2px;
+  }
+}
+
 :root.dark .highlight-text:after {
   background-color: #8944ce; /* Vous pouvez changer la couleur */
 }
