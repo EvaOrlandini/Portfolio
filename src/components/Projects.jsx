@@ -5,7 +5,6 @@ import "../styles/projects.css";
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
-  // Chargement dynamique des composants de projet
   const ProjectComponent = selectedProject
     ? lazy(() => import(`./projects/${selectedProject.component}.jsx`))
     : null;
@@ -32,14 +31,17 @@ const Projects = () => {
             <a
               key={project.id}
               onClick={() => setSelectedProject(project)}
-              className={`text-right flex flex-row justify-end items-center ${
+              className={`project text-right flex flex-row justify-end items-center text-black hover:text-black ${
                 selectedProject?.id === project.id
                   ? 'text-black bg-transparent'
                   : 'bg-transparent'
               }`}
             >
-              <h3 className="font-medium pr-6 text-lg">{project.title}</h3>
-              <div className='h-[1.5px] w-[100px] bg-black'></div>
+              <h3 className="pr-6 text-lg">{project.title}</h3>
+              <div
+                className='h-[1.5px] bg-black'
+                style={{ width: `${project.width}px` }}
+              ></div>
             </a>
           ))}
         </div>
