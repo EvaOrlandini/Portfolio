@@ -33,8 +33,8 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="flex flex-row mx-32 mb-36">
-      <div className="self-stretch w-6/12 flex flex-col justify-between">
+    <div id="contact" className="flex flex-row max-md:flex-col max-md:mx-10 mx-32 mb-36">
+      <div className="self-stretch w-6/12 max-md:w-full flex flex-col justify-between">
         <div>
           <h2 className="highlight-text-small text-text dark:text-text-dark text-4xl font-bold mb-4">
             Contact
@@ -59,7 +59,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="w-6/12 border-[1px] border-primary-100 rounded-md px-8 py-4 dark:border-none dark:bg-gray-200">
+      <div className="w-6/12 max-md:w-full border-[1px] border-primary-100 rounded-md px-8 py-4 dark:border-none dark:bg-gray-200">
         <h3 className="text-text text-lg text-center font-bold mb-4">Let's get in touch</h3>
         <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col">
           <label htmlFor="Contact" className="font-medium text-text">Contact information</label>

@@ -21,11 +21,11 @@ export default {
           }
         },
         'background': {
-          DEFAULT: '#333333',
+          DEFAULT: '#1A1A1A',
           dark: '#ffffff',
         },
         'text': {
-          DEFAULT: '#333333',
+          DEFAULT: '#1A1A1A',
           dark: '#ffffff',
         },
         'secondary': {

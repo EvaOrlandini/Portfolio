@@ -13,14 +13,14 @@ const Hero = () => {
   const theme = localStorage.getItem('theme') || 'light';
 
   return (
-    <div className="hero mb-44">
-      <div className="hero-content flex flex-row items-center w-9/12 mx-auto mt-32">
-        <div className="w-6/12 pr-6">
+    <div className="hero mb-44 max-md:mb-20">
+      <div className="hero-content flex flex-row items-center w-9/12 max-md:flex-col mx-auto mt-32">
+        <div className="w-6/12 max-md:w-full max-md:p-0">
           <h1 className="text-5xl font-bold leading-tight text-text dark:text-text-dark">
             Hey, I'm a <span className="highlight-text">front-end</span>
             developer
           </h1>
-          <p className="py-6 text-text dark:text-text-dark">
+          <p className="py-6 text-text dark:text-text-dark max-md:text-sm">
             After 5 years of studies and several diplomas in business, I decided
             to move towards my true passion: creating. I challenged myself to
             become a self-taught web designer and front-end developer.
@@ -33,7 +33,7 @@ const Hero = () => {
           </button>
         </div>
 
-        <div className="w-6/12 relative">
+        <div className="w-6/12 relative max-md:hidden">
           <img
             src={lineArt}
             alt="hero"
