@@ -4,19 +4,11 @@ import checkIcon from "../assets/icons/check.svg";
 const About = () => {
   return (
     <div id="about" className="mx-28 max-md:mx-0 flex flex-col items-center mb-36 max-md:mb-20">
-      <h2 className="highlight-text-small text-text text-4xl font-bold mb-14 max-md:mb-6 dark:text-text-dark">
+      <h2 className="highlight-text-small text-text text-4xl max-md:text-3xl font-bold mb-14 max-md:mb-6 dark:text-text-dark">
         About
       </h2>
-      <p className="text-center max-md:text-xs text-sm  w-9/12 dark:text-text-dark">
-        Quisque vitae risus et elit aliquam laoreet. Maecenas ut eros id eros
-        lacinia lacinia. Donec vel metus venenatis, accumsan lorem et, suscipit
-        ipsum. Quisque accumsan lobortis enim, ut vehicula quam ornare sed. Cras
-        et purus nec orci hendrerit porta vel vitae nulla. Nunc faucibus mi ac
-        accumsan viverra. Proin viverra ante ac consequat semper. Phasellus quis
-        nisi malesuada, pulvinar sem et, semper justo. Nulla facilisi. Aliquam
-        facilisis mauris pharetra eros iaculis laoreet. In fringilla neque
-        scelerisque, molestie erat feugiat, tempor nibh. Sed sed condimentum
-        ante. Nulla nec varius est. Nam iaculis urna id pharetra sodales.
+      <p className="text-center leading-relaxed max-md:leading-relaxed max-md:text-xs text-sm  w-8/12 dark:text-text-dark">
+      My journey into web development is driven by a passion for the perfect combination of creativity and technical skills. With a master’s degree in digital marketing and experience in project management, I bring a dual expertise to the table. After teaching myself the fundamentals of coding, I further strengthened my skills through an intensive full-stack bootcamp. This blend of experiences has made me highly adaptable and ready to tackle diverse challenges, transforming ideas into impactful digital solutions.
       </p>
       <div className="flex flex-row max-md:flex-col my-12 max-md:my-10 gap-x-16 justify-center content-start flex-wrap">
         <span className="flex flex-row items-center justify-center max-md:mb-6">
@@ -25,7 +17,7 @@ const About = () => {
             alt="check"
             className="w-[36px] h-auto mr-2 check-icon max-md:w-[28px]"
           />
-          <p className="text-text text-xl font-bold dark:text-text-dark">Fast learning</p>
+          <p className="text-text text-xl max-md:text-lg font-bold dark:text-text-dark">Fast learning</p>
         </span>
         <span className="flex flex-row items-center justify-center max-md:mb-6">
           <img
@@ -33,7 +25,7 @@ const About = () => {
             alt="check"
             className="w-[36px] h-auto mr-2 check-icon max-md:w-[28px]"
           />
-          <p className="text-text text-xl font-bold dark:text-text-dark">Creativity</p>
+          <p className="text-text text-xl max-md:text-lg font-bold dark:text-text-dark">Creativity</p>
         </span>
         <span className="flex flex-row items-center justify-center max-md:mb-6">
           <img
@@ -41,7 +33,7 @@ const About = () => {
             alt="check"
             className="w-[36px] h-auto mr-2 check-icon max-md:w-[28px]"
           />
-          <p className="text-text text-xl font-bold dark:text-text-dark">Solving problems</p>
+          <p className="text-text text-xl max-md:text-lg font-bold dark:text-text-dark">Solving problems</p>
         </span>
       </div>
 

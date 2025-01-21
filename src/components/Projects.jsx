@@ -10,7 +10,7 @@ const Projects = () => {
     : null;
 
   return (
-    <section id="projects" className="min-h-screen mx-32 max-md:mx-10 flex flex-row max-md:flex-col-reverse max-md:justify-end">
+    <section id="projects" className="mx-32 max-md:mx-10 mb-36 max-md:mb-20 flex flex-row max-md:flex-col-reverse max-md:justify-end">
       <div className="w-8/12 max-md:w-full max-md:mt-10">
         <div className="bg-white p-6 rounded-lg shadow-lg transition-all duration-300 ease-in-out dark:bg-background dark:border-[1px] dark:border-text-dark">
           <Suspense fallback={<div className="text-center">Chargement...</div>}>

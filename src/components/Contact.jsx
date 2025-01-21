@@ -39,22 +39,22 @@ const Contact = () => {
           <h2 className="highlight-text-small text-text dark:text-text-dark text-4xl font-bold mb-4">
             Contact
           </h2>
-          <p className="text-sm w-10/12 text-text dark:text-text-dark">I would be happy to discuss a project with you, address any questions you may have, or collaborate with you in any way possible.</p>
+          <p className="text-sm w-10/12 text-text max-md:text-sm dark:text-text-dark max-md:mb-8">I would be happy to discuss a project with you, address any questions you may have, or collaborate with you in any way possible.</p>
         </div>
-        <div className="flex flex-col gap-y-4">
-          <div className="infos bg-white dark:bg-transparent dark:border-[1px] dark:border-primary-dark px-4 py-2 shadow-input w-[300px] rounded-lg mb-1 flex items-center gap-3">
+        <div className="flex flex-col gap-y-4 max-md:mb-8">
+          <div className="infos bg-white dark:bg-transparent dark:border-[1px] dark:border-primary-dark px-4 py-2 shadow-input w-[300px] max-md:w-[270px] rounded-lg mb-1 flex items-center gap-3">
             <FontAwesomeIcon icon={faEnvelope} className="text-text w-4 dark:text-text-dark" />
-            <p className="text-text dark:text-text-dark">evaorlandini.pro@gmail.com</p>
+            <p className="text-text max-md:text-sm dark:text-text-dark">evaorlandini.pro@gmail.com</p>
           </div>
 
-          <div className="infos bg-white dark:bg-transparent dark:border-[1px] dark:border-primary-dark px-4 py-2 shadow-input w-[300px] rounded-lg mb-1 flex items-center gap-3">
+          <div className="infos bg-white dark:bg-transparent dark:border-[1px] dark:border-primary-dark px-4 py-2 shadow-input w-[300px] max-md:w-[270px] rounded-lg mb-1 flex items-center gap-3">
             <FontAwesomeIcon icon={faPhone} className="text-text w-4 dark:text-text-dark" />
-            <p className="text-text dark:text-text-dark">+33 . 6 . 35. 11. 13 . 05</p>
+            <p className="text-text max-md:text-sm dark:text-text-dark">+33 . 6 . 35. 11. 13 . 05</p>
           </div>
 
-          <div className="infos bg-white dark:bg-transparent dark:border-[1px] dark:border-primary-dark px-4 py-2 shadow-input w-[300px] rounded-lg mb-1 flex items-center gap-3">
+          <div className="infos bg-white dark:bg-transparent dark:border-[1px] dark:border-primary-dark px-4 py-2 shadow-input w-[300px] max-md:w-[270px] rounded-lg mb-1 flex items-center gap-3">
             <FontAwesomeIcon icon={faLocationDot} className="text-text w-4 dark:text-text-dark" />
-            <p className="text-text dark:text-text-dark">Bali, Indonesia</p>
+            <p className="text-text max-md:text-sm dark:text-text-dark">Bali, Indonesia</p>
           </div>
         </div>
       </div>
@@ -69,7 +69,7 @@ const Contact = () => {
               type="text"
               id="firstName"
               placeholder="First Name"
-              className="w-full px-4 py-2 rounded-md shadow-input"
+              className="w-full px-4 py-2 rounded-md shadow-input max-md:text-sm"
             />
             {errors.firstName && (
               <span className="text-red-500 text-sm">{errors.firstName.message}</span>
@@ -79,7 +79,7 @@ const Contact = () => {
               type="text"
               id="lastName"
               placeholder="Last Name"
-              className="w-full px-4 py-2 rounded-md shadow-input"
+              className="w-full px-4 py-2 rounded-md shadow-input max-md:text-sm"
             />
             {errors.lastName && (
               <span className="text-red-500 text-sm">{errors.lastName.message}</span>
@@ -98,7 +98,7 @@ const Contact = () => {
               type="email"
               id="email"
               placeholder="Email"
-              className="w-full px-4 py-2 my-2 rounded-md shadow-input"
+              className="w-full px-4 py-2 my-2 rounded-md shadow-input max-md:text-sm"
             />
             {errors.email && (
               <span className="text-red-500 text-sm">{errors.email.message}</span>
@@ -117,7 +117,7 @@ const Contact = () => {
               type="tel"
               id="phone"
               placeholder="Phone number"
-              className="w-full px-4 py-2 my-2 rounded-md shadow-input"
+              className="w-full px-4 py-2 my-2 rounded-md shadow-input max-md:text-sm"
             />
             {errors.phone && (
               <span className="text-red-500 text-sm">{errors.phone.message}</span>
@@ -131,7 +131,7 @@ const Contact = () => {
               id="message"
               rows="5"
               placeholder="Hello, I'm interested in..."
-              className="w-full px-4 py-2 my-2 rounded-md shadow-input focus:border-[1px] focus:border-primary-100 focus:shadow-none focus:bg-[#F6F6F6] focus:outline-none"
+              className="w-full px-4 py-2 my-2 rounded-md max-md:text-sm shadow-input focus:border-[1px] focus:border-primary-100 focus:shadow-none focus:bg-[#F6F6F6] focus:outline-none"
             ></textarea>
             {errors.message && (
               <span className="text-red-500 text-sm">{errors.message.message}</span>

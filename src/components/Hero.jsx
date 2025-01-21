@@ -16,14 +16,12 @@ const Hero = () => {
     <div className="hero mb-44 max-md:mb-20">
       <div className="hero-content flex flex-row items-center w-9/12 max-md:flex-col mx-auto mt-32">
         <div className="w-6/12 max-md:w-full max-md:p-0">
-          <h1 className="text-5xl font-bold leading-tight text-text dark:text-text-dark">
-            Hey, I'm a <span className="highlight-text">front-end</span>
-            developer
+          <h1 className="text-5xl max-md:text-4xl font-bold leading-tight text-text dark:text-text-dark">
+            Hello, I'm a <span className="highlight-text">full-stack</span>
+            web developer
           </h1>
           <p className="py-6 text-text dark:text-text-dark max-md:text-sm">
-            After 5 years of studies and several diplomas in business, I decided
-            to move towards my true passion: creating. I challenged myself to
-            become a self-taught web designer and front-end developer.
+          I combine creativity and technical expertise to craft seamless, user-friendly websites. Passionate about bringing ideas to life through clean, modern code.
           </p>
           <button className="btn btn-primary border-1 border-primary-100 dark:border-primary-dark bg-transparent dark:text-text-dark">
             Download my CV

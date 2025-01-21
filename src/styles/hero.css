@@ -20,6 +20,7 @@
   .highlight-text:after {
     height: 15px;
     bottom: 2px;
+    left: 0;
   }
 }
 

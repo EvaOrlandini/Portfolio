@@ -21,7 +21,6 @@ a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
-  cursor: url('../assets/images/cursor.png'), pointer;
 }
 a:hover {
   color: #535bf2;
@@ -34,10 +33,9 @@ body {
   min-width: 320px;
   min-height: 100vh;
   font-family: 'Montserrat', sans-serif;
-  cursor: none;
   background-color: #F6F6F6;
   background-image: url('../assets/images/paper.png');
-  background-size: contain;
+  background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
 }
@@ -106,6 +104,7 @@ button:focus-visible {
   .highlight-text-small:after {
     bottom: 4px;
     height: 12px;
+    left: 0;
   }
 }
 
