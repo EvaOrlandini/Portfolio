@@ -69,3 +69,16 @@
 .draw:nth-child(6) { animation-delay: 0.6s; }
 .draw:nth-child(7) { animation-delay: 0.7s; }
 .draw:nth-child(8) { animation-delay: 0.8s; }
+
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

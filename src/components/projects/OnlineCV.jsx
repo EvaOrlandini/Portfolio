@@ -1,4 +1,4 @@
-import dashlyVideo from '../../assets/videos/dashly.mp4';
+import onlineCV from '../../assets/videos/CV_online.mp4';
 import { Github, SquareArrowOutUpRight } from 'lucide-react'
 
 const OnlineCV = () => {
@@ -15,14 +15,6 @@ const OnlineCV = () => {
         </div>
 
         <div className="flex gap-2">
-          <a
-            href="https://github.com/..."
-            className="w-[35px] h-[35px] flex items-center justify-center rounded-md shadow-input bg-black dark:bg-text-dark"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Github className='text-white dark:text-text' />
-          </a>
           <a
             href="https://demo..."
             className="w-[35px] h-[35px] flex items-center justify-center rounded-md shadow-input bg-primary-100 dark:bg-primary-dark"
@@ -49,7 +41,7 @@ const OnlineCV = () => {
           muted
           playsInline
         >
-          <source src={dashlyVideo} type="video/mp4" />
+          <source src={onlineCV} type="video/mp4" />
           Votre navigateur ne supporte pas la lecture de vidéos.
         </video>
       </div>

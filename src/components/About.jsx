@@ -3,7 +3,7 @@ import checkIcon from "../assets/icons/check.svg";
 
 const About = () => {
   return (
-    <div id="about" className="mx-28 max-md:mx-0 flex flex-col items-center mb-36 max-md:mb-20">
+    <div id="about" className="mx-28 max-md:mx-0 flex flex-col items-center mb-20 pt-16 max-md:mb-20">
       <h2 className="highlight-text-small text-text text-4xl max-md:text-3xl font-bold mb-14 max-md:mb-6 dark:text-text-dark">
         About
       </h2>

@@ -141,7 +141,7 @@ const Contact = () => {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full bg-text  font-bold text-white py-3 my-2 rounded-md shadow-input"
+            className="w-full bg-text hover:bg-primary dark:hover:bg-primary-dark font-bold text-white py-3 my-2 rounded-md shadow-input"
           >
             {isSubmitting ? 'Sending...' : 'Send Message'}
           </button>

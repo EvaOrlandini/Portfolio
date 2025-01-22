@@ -21,7 +21,7 @@ const Bantu = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Github className='text-white dark:text-text' />
+            <Github className='text-white dark:text-text' size={20}/>
           </a>
           <a
             href="https://demo..."
@@ -29,7 +29,7 @@ const Bantu = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <SquareArrowOutUpRight className='text-white' />
+            <SquareArrowOutUpRight className='text-white'/>
           </a>
         </div>
       </div>
