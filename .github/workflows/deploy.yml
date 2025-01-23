@@ -9,10 +9,6 @@ jobs:
   web-deploy:
     name: Deploy
     runs-on: ubuntu-latest
-    env:
-      FTP_SERVER: ${{ secrets.FTP_SERVER }}
-      FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
-      FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
 
     steps:
     - name: Get latest code
@@ -31,9 +27,9 @@ jobs:
     - name: Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: ${{ env.FTP_SERVER }}
-        username: ${{ env.FTP_USERNAME }}
-        password: ${{ env.FTP_PASSWORD }}
-        local-dir: ./dist/
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./build/
         server-dir: /public_html/
         dangerous-clean-slate: true
