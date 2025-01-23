@@ -3,23 +3,33 @@ name: Deploy to Hostinger
 on:
   push:
     branches:
-      - master # Déclenche le déploiement lorsqu'il y a un push sur la branche "main"
+      - master
 
 jobs:
-  deploy:
+  web-deploy:
+    name: Deploy
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout the code
+    - name: Get latest code
       uses: actions/checkout@v3
 
-    - name: Set up SSH
-      run: |
-        mkdir -p ~/.ssh
-        echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
-        chmod 600 ~/.ssh/id_rsa
-        ssh-keyscan -H evaorlandini.com >> ~/.ssh/known_hosts
+    - name: Use Node.js 18
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
 
-    - name: Deploy files via SCP
+    - name: Build Project
       run: |
-        scp -r ./ u860716262@evaorlandini.com:/home/u860716262/public_html/
+        npm install
+        npm run build
+
+    - name: Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./dist/
+        server-dir: /public_html/
+        dangerous-clean-slate: true
