@@ -24,6 +24,9 @@ jobs:
         npm install
         CI=false npm run build  # Exécute la commande build
 
+    - name: List build directory
+      run: ls -la build/  # Pour vérifier que les fichiers sont bien générés
+
     - name: Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4  # Action de déploiement FTP
       with:
@@ -31,5 +34,6 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}    # Ton nom d'utilisateur FTP (défini dans les secrets)
         password: ${{ secrets.FTP_PASSWORD }}    # Ton mot de passe FTP (défini dans les secrets)
         local-dir: ./build/                      # Le répertoire local à déployer
-        server-dir: /public_html/                # Le répertoire distant sur ton serveur Hostinger
+        server-dir: ./public_html/                # Le répertoire distant sur ton serveur Hostinger
         dangerous-clean-slate: true              # Supprime les fichiers existants sur le serveur avant le déploiement
+        log-level: verbose  # Pour plus de détails dans les logs
