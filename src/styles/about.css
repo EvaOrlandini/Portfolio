@@ -77,3 +77,37 @@
   /* Filtre pour #8944CE (violet) */
   filter: invert(37%) sepia(52%) saturate(1241%) hue-rotate(242deg) brightness(87%) contrast(88%);
 }
+
+.slide-in-left {
+  animation: slideInLeft 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+  animation-timeline: view();
+}
+
+.slide-in-right{
+  animation: slideInRight 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+  animation-timeline: view();
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-50%);
+  }
+  30% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(50%);
+  }
+  30% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
