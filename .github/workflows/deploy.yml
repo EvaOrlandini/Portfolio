@@ -3,33 +3,33 @@ name: Deploy to Hostinger
 on:
   push:
     branches:
-      - master
+      - master  # Déclenche le workflow lorsque tu fais un push sur la branche master
 
 jobs:
   web-deploy:
     name: Deploy
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  # Exécute le workflow sur une machine Ubuntu
 
     steps:
     - name: Get latest code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v3  # Récupère ton code du dépôt GitHub
 
     - name: Use Node.js 18
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v3  # Installe Node.js 18
       with:
         node-version: '18'
 
     - name: Build Project
       run: |
         npm install
-        CI=false npm run build
+        CI=false npm run build  # Exécute la commande build
 
     - name: Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4  # Action de déploiement FTP
       with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./build/
-        server-dir: /public_html/
-        dangerous-clean-slate: true
+        server: ${{ secrets.FTP_SERVER }}        # Ton serveur FTP (défini dans les secrets)
+        username: ${{ secrets.FTP_USERNAME }}    # Ton nom d'utilisateur FTP (défini dans les secrets)
+        password: ${{ secrets.FTP_PASSWORD }}    # Ton mot de passe FTP (défini dans les secrets)
+        local-dir: ./build/                      # Le répertoire local à déployer
+        server-dir: /public_html/                # Le répertoire distant sur ton serveur Hostinger
+        dangerous-clean-slate: true              # Supprime les fichiers existants sur le serveur avant le déploiement
