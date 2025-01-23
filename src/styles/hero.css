@@ -10,10 +10,26 @@
   position: absolute;
   left: 8px;
   bottom: 8px;
-  width: calc(100%);
+  width: 0;
+  opacity: 0;
   height: 20px;
   background-color: #FD5D35; /* Vous pouvez changer la couleur */
   z-index: -1;
+  animation: anim 1s linear 1s forwards; /* Délai de 2s avant le début */
+}
+
+@keyframes anim {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  1% {
+    opacity: 1; /* Devient visible au début de l'animation */
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
 }
 
 @media (max-width: 768px) {

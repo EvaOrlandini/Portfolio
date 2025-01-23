@@ -1,0 +1,25 @@
+name: Deploy to Hostinger
+
+on:
+  push:
+    branches:
+      - master # Déclenche le déploiement lorsqu'il y a un push sur la branche "main"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout the code
+      uses: actions/checkout@v3
+
+    - name: Set up SSH
+      run: |
+        mkdir -p ~/.ssh
+        echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan -H evaorlandini.com >> ~/.ssh/known_hosts
+
+    - name: Deploy files via SCP
+      run: |
+        scp -r ./ u860716262@evaorlandini.com:/home/u860716262/public_html/
