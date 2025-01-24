@@ -16,7 +16,7 @@ const OnlineCV = () => {
 
         <div className="flex gap-2">
           <a
-            href="https://demo..."
+            href="../../../cvproject/V2/index.html"
             className="w-[35px] h-[35px] flex items-center justify-center rounded-md shadow-input bg-primary-100 dark:bg-primary-dark"
             target="_blank"
             rel="noopener noreferrer"
