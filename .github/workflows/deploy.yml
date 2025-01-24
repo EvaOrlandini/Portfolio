@@ -35,5 +35,10 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}    # Ton mot de passe FTP (défini dans les secrets)
         local-dir: ./build/                      # Le répertoire local à déployer
         server-dir: /domains/evaorlandini.com/public_html/               # Le répertoire distant sur ton serveur Hostinger
-        dangerous-clean-slate: true              # Supprime les fichiers existants sur le serveur avant le déploiement
+        dangerous-clean-slate: false              # Changé à false pour ne pas nettoyer
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          projet/**  # Remplacez "projet" par le nom de votre dossier de sous-domaine
         log-level: verbose  # Pour plus de détails dans les logs
