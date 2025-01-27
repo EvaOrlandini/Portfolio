@@ -1,4 +1,4 @@
-import dashlyVideo from '../../assets/videos/dashly.mp4';
+import bantuVideo from '../../assets/videos/bantu.mp4';
 import { Github, SquareArrowOutUpRight } from 'lucide-react'
 
 const Bantu = () => {
@@ -23,14 +23,7 @@ const Bantu = () => {
           >
             <Github className='text-white dark:text-text' size={20}/>
           </a>
-          <a
-            href="https://demo..."
-            className="w-[35px] h-[35px] flex items-center justify-center rounded-md shadow-input bg-primary-100 dark:bg-primary-dark"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <SquareArrowOutUpRight className='text-white'/>
-          </a>
+
         </div>
       </div>
       <div className="flex flex-wrap gap-2 items-center mb-4">
@@ -48,7 +41,7 @@ const Bantu = () => {
           muted
           playsInline
         >
-          <source src={dashlyVideo} type="video/mp4" />
+          <source src={bantuVideo} type="video/mp4" />
           Votre navigateur ne supporte pas la lecture de vidéos.
         </video>
       </div>

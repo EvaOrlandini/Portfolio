@@ -38,7 +38,6 @@ const About = () => {
       </div>
 
       <div className="w-full max-md:w-10/12 mt-6 max-md:mt-0 flex flex-row gap-10 max-md:gap-6 justify-center content-start flex-wrap">
-        <div className="max-md:hidden slide-in-left flex flex-row gap-10">
         {/* HTML */}
         <div className="badge group w-fit h-fit flex flex-row items-center justify-center bg-gray-200 hover:bg-[#FFF4E6] px-3 py-1 rounded-md gap-3 transition-colors duration-200">
           <i className="devicon-html5-plain text-gray-600 group-hover:text-[#E34F26] transition-colors duration-200"></i>
@@ -87,8 +86,6 @@ const About = () => {
           <p className="font-medium text-md max-md:text-xs">Tailwind</p>
         </div>
 
-        </div>
-        <div className="max-md:hidden slide-in-right flex flex-row gap-10">
         {/* Bootstrap */}
         <div className="badge group w-fit h-fit flex flex-row items-center justify-center bg-gray-200 hover:bg-[#F3E5F5] px-3 py-1 rounded-md gap-3 transition-colors duration-200">
           <i className="devicon-bootstrap-plain text-gray-600 group-hover:text-[#7952B3] transition-colors duration-200"></i>
@@ -129,7 +126,6 @@ const About = () => {
         <div className="badge group w-fit h-fit flex flex-row items-center justify-center bg-gray-200 hover:bg-[#E3F2FD] px-3 py-1 rounded-md gap-3 transition-colors duration-200">
           <i className="devicon-vscode-plain text-gray-600 group-hover:text-[#007ACC] transition-colors duration-200"></i>
           <p className="font-medium text-md max-md:text-xs">VS Code</p>
-        </div>
         </div>
       </div>
     </div>

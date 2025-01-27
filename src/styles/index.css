@@ -45,10 +45,23 @@ body {
   transition: background-color 0.5s ease-in-out;
 }
 
+@media only screen and (max-width: 768px) {
+  body {
+    background-image: url('../assets/images/paper-mob.png');
+  }
+}
+
 :root.dark body {
   background-image: url('../assets/images/grid-background.png');
   background-color: #1A1A1A;
 }
+
+@media only screen and (max-width: 768px) {
+  :root.dark body {
+    background-image: url('../assets/images/background-grid-mob.png');
+  }
+}
+
 
 h1 {
   font-size: 3.2em;

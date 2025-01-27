@@ -29,18 +29,20 @@ const Hero = () => {
           <p className="py-6 text-text dark:text-text-dark max-md:text-sm">
             I combine creativity and technical expertise to craft seamless, user-friendly websites. Passionate about bringing ideas to life through clean, modern code.
           </p>
-          <button
-            onClick={handleDownload}
-            className="btn btn-primary border-[1px] text-text hover:bg-primary-100 hover:text-white dark:hover:bg-primary-dark border-primary-100 dark:border-primary-dark bg-transparent dark:text-text-dark inline-flex items-center gap-2"
-          >
-            Download my CV
-          </button>
-          <a
-            href="#contact"
-            className="btn btn-primary bg-gray-200 text-text hover:bg-black hover:text-white ml-6 inline-flex items-center justify-center gap-2"
-          >
-            Contact me
-          </a>
+          <div className="flex flex-row max-md:flex-col max-md:items-start gap-4">
+            <button
+              onClick={handleDownload}
+              className="btn btn-primary border-[1px] text-text hover:bg-primary-100 hover:text-white dark:bg-background dark:hover:bg-primary-dark border-primary-100 dark:border-primary-dark bg-transparent dark:text-text-dark inline-flex items-center gap-2"
+            >
+              Download my CV
+            </button>
+            <a
+              href="#contact"
+              className="btn btn-primary bg-gray-200 text-text hover:bg-black hover:text-white inline-flex items-center justify-center gap-2"
+            >
+              Contact me
+            </a>
+          </div>
         </div>
 
         <div className="w-6/12 relative max-md:hidden">

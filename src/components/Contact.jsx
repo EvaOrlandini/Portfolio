@@ -69,7 +69,7 @@ const Contact = () => {
               type="text"
               id="firstName"
               placeholder="First Name"
-              className="w-full px-4 py-2 rounded-md shadow-input max-md:text-sm"
+              className="w-full px-4 py-2 rounded-md shadow-input max-md:text-sm focus:border-[1px] focus:border-primary-100 dark:focus:border-primary-dark focus:shadow-none focus:bg-[#F6F6F6] focus:outline-none"
             />
             {errors.firstName && (
               <span className="text-red-500 text-sm">{errors.firstName.message}</span>
@@ -79,7 +79,7 @@ const Contact = () => {
               type="text"
               id="lastName"
               placeholder="Last Name"
-              className="w-full px-4 py-2 rounded-md shadow-input max-md:text-sm"
+              className="w-full px-4 py-2 rounded-md shadow-input max-md:text-sm focus:border-[1px] focus:border-primary-100 dark:focus:border-primary-dark focus:shadow-none focus:bg-[#F6F6F6] focus:outline-none"
             />
             {errors.lastName && (
               <span className="text-red-500 text-sm">{errors.lastName.message}</span>
@@ -98,7 +98,7 @@ const Contact = () => {
               type="email"
               id="email"
               placeholder="Email"
-              className="w-full px-4 py-2 my-2 rounded-md shadow-input max-md:text-sm"
+              className="w-full px-4 py-2 my-2 rounded-md shadow-input max-md:text-sm focus:border-[1px] focus:border-primary-100 dark:focus:border-primary-dark focus:shadow-none focus:bg-[#F6F6F6] focus:outline-none"
             />
             {errors.email && (
               <span className="text-red-500 text-sm">{errors.email.message}</span>
@@ -117,7 +117,7 @@ const Contact = () => {
               type="tel"
               id="phone"
               placeholder="Phone number"
-              className="w-full px-4 py-2 my-2 rounded-md shadow-input max-md:text-sm"
+              className="w-full px-4 py-2 my-2 rounded-md shadow-input max-md:text-sm focus:border-[1px] focus:border-primary-100 dark:focus:border-primary-dark focus:shadow-none focus:bg-[#F6F6F6] focus:outline-none"
             />
             {errors.phone && (
               <span className="text-red-500 text-sm">{errors.phone.message}</span>
@@ -131,7 +131,7 @@ const Contact = () => {
               id="message"
               rows="5"
               placeholder="Hello, I'm interested in..."
-              className="w-full px-4 py-2 my-2 rounded-md max-md:text-sm shadow-input focus:border-[1px] focus:border-primary-100 focus:shadow-none focus:bg-[#F6F6F6] focus:outline-none"
+              className="w-full px-4 py-2 my-2 rounded-md max-md:text-sm shadow-input focus:border-[1px] focus:border-primary-100 dark:focus:border-primary-dark focus:shadow-none focus:bg-[#F6F6F6] focus:outline-none"
             ></textarea>
             {errors.message && (
               <span className="text-red-500 text-sm">{errors.message.message}</span>

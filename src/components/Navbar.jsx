@@ -21,7 +21,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className=" w-full px-32 h-20 flex justify-between max-md:justify-end items-center  dark:bg-text">
+    <div className=" w-full px-32 h-20 flex justify-between max-md:px-8 items-center  dark:bg-text">
 
       {/* Name */}
       <p className="name text-3xl max-md:mr-auto max-md:text-xl font-bold dark:text-text-dark">Eva Orlandini<span className='text-primary text-6xl dark:text-primary-dark' >.</span></p>
