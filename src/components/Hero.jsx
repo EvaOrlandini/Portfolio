@@ -23,7 +23,7 @@ const Hero = () => {
       <div className="hero-content flex flex-row items-center w-9/12 max-md:flex-col mx-auto mt-20">
         <div className="w-6/12 max-md:w-full max-md:p-0">
           <h1 className="text-5xl max-md:text-4xl font-bold leading-tight text-text dark:text-text-dark">
-            Hello, I'm a <span className="highlight-text">full-stack</span>
+            Hello, I'm a <span className="highlight-text">front-end</span>
             web developer
           </h1>
           <p className="py-6 text-text dark:text-text-dark max-md:text-sm">
