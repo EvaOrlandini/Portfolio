@@ -1,0 +1,13 @@
+@tailwind base;
+@import "abstracts";
+@import "base";
+
+@tailwind components;
+@import "layout";
+@import "components";
+@import "themes";
+@import "animations";
+
+@tailwind utilities;
+@import "utilities";
+@import "pages";

@@ -1,0 +1,13 @@
+// Shadows
+.shadow-input {
+  box-shadow:
+  0px 0px 0.9px rgba(0, 0, 0, 0.024),
+  0px 0px 2.5px rgba(0, 0, 0, 0.035),
+  0px 0px 6px rgba(0, 0, 0, 0.046),
+  0px 0px 20px rgba(0, 0, 0, 0.07)
+;
+}
+
+.shadow-none {
+  box-shadow:none;
+}

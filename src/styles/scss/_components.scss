@@ -1,0 +1,117 @@
+@layer components {
+  // Buttons
+  .btn {
+    @apply text-text rounded-lg font-medium cursor-pointer transition-colors duration-200 px-5 py-3;
+    &--primary {
+      @apply border border-primary-100 bg-transparent
+      dark:bg-background dark:border-primary-dark dark:text-text-dark
+      hover:bg-primary-100 hover:text-white dark:hover:bg-primary-dark;
+      &-full {
+        @apply bg-primary-100 text-white
+        dark:bg-primary-dark;
+      }
+    }
+    &--secondary {
+      @apply bg-black text-text-dark
+    dark:bg-gray-200 dark:text-text
+      hover:bg-gray-200 hover:text-black dark:hover:bg-black dark:hover:text-text-dark;
+    }
+    &--w-full {
+      @apply w-full
+    dark:bg-black dark:text-text-dark
+    dark:hover:bg-primary-100-dark dark:hover:text-black;
+    }
+    &--icon {
+      @apply flex items-center justify-center rounded-md w-9 h-9;
+    }
+  }
+
+  // Badges
+  .badge {
+    @apply flex flex-row items-center justify-center gap-3;
+    &--lg {
+      @apply rounded-md px-3 py-1 bg-gray-200 font-medium transition-colors duration-200;
+      &:hover {
+        background-color: color-mix(in srgb, var(--hover-color) 15%, white);
+
+        .badge__icon {
+          color: var(--hover-color);
+        }
+      }
+    }
+    &--sm {
+      @apply p-2 bg-gray-100 rounded-lg text-xs text-text max-md:hidden;
+    }
+    &__icon {
+      @apply text-gray-600 transition-colors duration-200;
+    }
+    &__text {
+      @apply text-base max-md:text-xs text-text;
+    }
+  }
+
+  // Logo
+  .logo {
+    @apply text-3xl max-md:mr-auto max-md:text-xl font-bold dark:text-text-dark;
+    font-family: "Prompt", sans-serif;
+  }
+
+  // Theme controller
+  .theme-controller {
+    @apply z-0 flex cursor-pointer select-none items-center;
+
+    &__container {
+      @apply relative;
+    }
+
+    &__input {
+      @apply sr-only;
+    }
+
+    &__background {
+      @apply block h-8 w-14 rounded-full bg-primary-100 shadow-md;
+      @apply dark:bg-primary-dark;
+    }
+
+    &__toggle {
+      @apply absolute left-1 top-1 flex h-6 w-6;
+      @apply items-center justify-center rounded-full;
+      @apply bg-white shadow-md;
+      @apply transition transform duration-200 ease-in-out;
+
+      &--dark {
+        @apply translate-x-6;
+      }
+    }
+
+    &__icon {
+      @apply h-4 w-4;
+
+      &--dark {
+        @apply text-primary-dark;
+      }
+
+      &--light {
+        @apply text-primary-100;
+      }
+    }
+  }
+
+  // Icons
+  .soft-skills {
+    @apply flex flex-row items-center justify-center max-md:mb-6;
+    &__icon {
+      @apply w-[36px] h-auto mr-2 max-md:w-[28px];
+      filter: invert(42%) sepia(85%) saturate(2028%) hue-rotate(346deg)
+        brightness(91%) contrast(97%);
+
+      :root.dark & {
+        filter: invert(37%) sepia(52%) saturate(1241%) hue-rotate(242deg)
+          brightness(87%) contrast(88%);
+      }
+    }
+    &__text {
+      @apply paragraph paragraph--lg;
+    }
+  }
+}

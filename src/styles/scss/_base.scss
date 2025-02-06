@@ -1,0 +1,61 @@
+
+@layer base {
+  :root {
+      background: {
+      color: #f6f6f6;
+      image: url("../../assets/images/paper.png");
+      size: cover;
+      position: top;
+      repeat: no-repeat;
+    }
+    @media only screen and (max-width: 768px) {
+      background-image: url("../../assets/images/paper-mob.png");
+    }
+    &.dark {
+      color: $text-white;
+      background-image: url("../../assets/images/grid-background.png");
+      background-color: #1A1A1A;
+      @media only screen and (max-width: 768px) {
+        background-image: url("../../assets/images/background-grid-mob.png");
+      }
+    }
+  }
+  body {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .section {
+    @apply mb-20 max-md:mb-20;
+  }
+  .heading {
+    &--h1 {
+      @apply text-5xl max-md:text-4xl font-bold leading-tight dark:text-text-dark;
+      font-family: "Prompt", sans-serif;
+    }
+    &--h2 {
+      @apply text-4xl max-md:text-3xl font-bold dark:text-text-dark mb-14 max-md:mb-6;
+      font-family: "Prompt", sans-serif;
+    }
+
+    &--h3 {
+      @apply text-3xl font-bold dark:text-text-dark;
+    }
+
+    &--h4 {
+      @apply text-lg dark:text-text-dark;
+    }
+  }
+
+  .paragraph {
+    @apply font-light text-text dark:text-text-dark;
+    &--sm {
+      @apply text-sm max-md:text-xs;
+    }
+    &--md {
+      @apply text-base max-md:text-sm;
+    }
+    &--lg {
+      @apply text-xl max-md:text-lg font-bold;
+    }
+  }
+}

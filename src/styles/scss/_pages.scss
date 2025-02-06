@@ -1,0 +1,132 @@
+.container {
+  @apply mx-auto;
+  &--hero {
+    @apply w-9/12 flex flex-row items-center max-md:flex-col mt-20;
+  }
+  &--about {
+    @apply flex flex-col items-center pt-16;
+  }
+  &--projects {
+    @apply w-10/12 flex flex-row max-md:flex-col-reverse max-md:justify-end pt-16;
+  }
+  &--contact {
+    @apply w-10/12 flex flex-row max-md:flex-col;
+  }
+}
+
+// Hero
+.hero {
+  &__content {
+    @apply w-6/12 max-md:w-full max-md:p-0;
+  }
+  &__buttons {
+    @apply flex flex-row max-md:flex-col max-md:items-start gap-4;
+  }
+  &__media {
+    @apply w-6/12 max-md:w-full max-md:hidden;
+  }
+  &__image {
+    @apply h-[450px] mx-auto;
+  }
+}
+
+// About
+.about {
+  &__description {
+    @apply text-center w-8/12 leading-relaxed;
+  }
+  &__skills-soft {
+    @apply flex flex-row max-md:flex-col my-12 max-md:my-10 gap-x-16 justify-center content-start flex-wrap;
+  }
+  &__skills-hard {
+    @apply w-full max-md:w-10/12 mt-6 max-md:mt-0 flex flex-row gap-10 max-md:gap-6 justify-center content-start flex-wrap;
+  }
+}
+
+// Projects
+.projects {
+  &__preview {
+    @apply w-8/12 max-md:w-full max-md:mt-10;
+  }
+  &__selector {
+    @apply w-4/12 max-md:w-full text-right;
+  }
+  &__list {
+    @apply flex flex-col gap-4;
+  }
+  &__link {
+    @apply flex flex-row justify-end items-center text-black hover:text-black;
+    &-title {
+      @apply pr-6;
+    }
+    &-line {
+      @apply h-[1.5px] bg-black dark:bg-text-dark;
+    }
+  }
+}
+
+// ProjectCard
+.project {
+  &__card {
+    @apply bg-white p-6 rounded-lg shadow-lg transition-all duration-300 ease-in-out dark:bg-background dark:border-[1px] dark:border-text-dark;
+  }
+  &__badges {
+    @apply flex flex-wrap gap-2 items-center;
+  }
+  &__buttons {
+    @apply flex gap-2;
+  }
+  &__description {
+    @apply mb-4;
+  }
+  &__video {
+    @apply mb-4 w-full object-cover rounded-md;
+  }
+}
+
+.card {
+  &__header {
+    @apply flex flex-row justify-between items-center mb-8;
+    &-left {
+      @apply flex flex-row items-center gap-4;
+    }
+  }
+}
+
+// Contact
+.contact {
+  &-info {
+    @apply self-stretch w-6/12 max-md:w-full flex flex-col justify-between;
+    &__description {
+      @apply w-10/12 mb-8;
+    }
+    &__details {
+      @apply flex flex-col gap-y-4 max-md:mb-8;
+    }
+    &__item {
+      @apply bg-white dark:bg-transparent dark:border-[1px] dark:border-primary-dark px-4 py-2 shadow-input w-[300px] max-md:w-[270px] rounded-lg mb-1 flex items-center gap-3;
+    }
+  }
+  &-form {
+    @apply w-6/12 max-md:w-full border-[1px] border-primary-100 rounded-md px-8 py-4 dark:border-none dark:bg-gray-200;
+    &__title {
+      @apply text-text text-lg text-center font-bold mb-4;
+    }
+  }
+}
+
+.form {
+  @apply flex flex-col;
+  &__label {
+    @apply font-medium text-text;
+  }
+  &__group {
+    @apply flex flex-row gap-4 my-2;
+  }
+  &__input {
+    @apply w-full px-4 py-2 rounded-md shadow-input max-md:text-sm focus:border-[1px] focus:border-primary-100 dark:focus:border-primary-dark focus:shadow-none focus:bg-[#F6F6F6] focus:outline-none;
+    &--error {
+      @apply text-red-500 text-sm;
+    }
+  }
+}
