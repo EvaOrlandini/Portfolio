@@ -53,7 +53,13 @@ export const ProjectCard = ({
       </div>
 
       <div className="project__video">
-        <video autoPlay loop muted playsInline>
+      <video
+          key={video} // Ajout de la prop key pour forcer le remontage
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
           <source src={video} type="video/mp4" />
           Votre navigateur ne supporte pas la lecture de vidéos.
         </video>

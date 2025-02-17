@@ -1,6 +1,7 @@
 import dashlyVideo from '../assets/videos/dashly.mp4'
 import bantuVideo from '../assets/videos/bantu.mp4'
 import cvOnlineVideo from '../assets/videos/CV_online.mp4'
+import retroGames from '../assets/videos/retro_games.mp4'
 
 export const projectsData = [
   {
@@ -12,7 +13,7 @@ export const projectsData = [
     video: dashlyVideo,
     githubUrl: "https://github.com/EvaOrlandini/Dashly",
     demoUrl: "http://www.dashlyapp.me/",
-    lineWidth: "85", // Classe Tailwind pour la largeur de la ligne décorative
+    lineWidth: "90", // Classe Tailwind pour la largeur de la ligne décorative
   },
   {
     id: 2,
@@ -35,5 +36,16 @@ export const projectsData = [
     githubUrl: "",
     demoUrl: "http://cvproject.evaorlandini.com/",
     lineWidth: "60", // Classe Tailwind pour la largeur de la ligne décorative
+  },
+  {
+    id: 4,
+    title: "Retro games",
+    description1: "A small Ruby on Rails app featuring a collection of mini-games with a retro design. Built using Bootstrap for a classic pixel-art aesthetic and smooth responsiveness.",
+    description2: "Play, compete, and enjoy a nostalgic arcade experience!",
+    technologies: ["Ruby On Rails", "Bootstrap", "JavaScript"],
+    video: retroGames,
+    githubUrl: "https://github.com/EvaOrlandini/retro-games",
+    demoUrl: "https://retro-games-pobw.onrender.com",
+    lineWidth: "80", // Classe Tailwind pour la largeur de la ligne décorative
   },
 ]
